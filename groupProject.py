@@ -10,9 +10,11 @@ data = pd.read_csv('musteri_veri_seti.csv')
 X = data[['Yaş', 'ÜrünMiktarı', 'ToplamTutar']]
 
 # Hedef değişkeni seçme
-y = data['ÜrünKategori']
+y = data['ÜrünKategori']    
 
 # Eğitim ve test verilerini ayırma
+# test_size: Bu parametre, veri setinin ne kadarının test verisi olarak ayrılacağını belirler %20 test, %80 eğitim
+# random_state: Bu parametre, veri setinin bölünmesindeki rastgelelik seviyesini kontrol eder
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 # Karar ağacı modelini oluşturma
