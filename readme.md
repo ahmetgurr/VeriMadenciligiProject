@@ -45,3 +45,13 @@ Giyim             13850.0           64
 Gıda               6360.0           89
 
 Bir Sonraki Ay İçin Tahmin Edilen Ürün: Elektronik
+
+
+## K-means (Kümeleme Algoritması)
+Bu algoritma denetimsiz öğrenme için kullanılan bir makine öğrenimi algoritmasıdır. Veri noktalarının benzerliğine dayalı olarak verileri önceden tanımlanmış sayıda küme (k) içinde gruplama yöntemidir. 
+K-means algoritması için aşağıdaki adımları gerçekleştirilir; 
+1.	Başlangıçta, k küme merkezi rastgele seçilir.
+2.	Her veri noktası, ona en yakın küme merkezine atanır.
+3.	Her küme için yeni bir merkez hesaplanır (küme elemanlarının ortalaması alınır).
+4.	Küme merkezleri artık değişmiyorsa veya belirli bir iterasyon sayısına ulaşıldıysa algoritma sona erer; aksi halde, adımlar 2-3 tekrarlanır.
+5.	Sonuç olarak, veri noktaları k kümesine atanmış olur.
